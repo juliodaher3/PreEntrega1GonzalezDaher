@@ -31,6 +31,15 @@ if (
       else {
         valorFinal = metrosDeCuerda * precioNaylon
       }
+      
+      while (metrosDeCuerda > 1000) {
+        alert ("Tenemos solamente 1000 unidades en stock");
+        metrosDeCuerda = parseInt(prompt("Cuanto desea?"));
+      }
+
+
+
+
       if (
         confirm(
           `Usted esta por comprar ${metrosDeCuerda} metros de cuerda por $${valorFinal}. Confirma la transaccion?`
@@ -57,6 +66,11 @@ if (
       else {
         valorFinal = metrosDeCuerda * precioPoliester
 
+        while (metrosDeCuerda > 1000) {
+          alert ("Tenemos solamente 1000 unidades en stock");
+          metrosDeCuerda = parseInt(prompt("Cuanto desea?"));
+        }
+
         if (
           confirm(
             `Usted esta por comprar ${metrosDeCuerda} metros de cuerda por $${valorFinal}. Confirma la transaccion?`
@@ -67,11 +81,11 @@ if (
           inputMetros.value = metrosDeCuerda;
           inputTotal.value = valorFinal;
         } else {
-          alert('ojala te mueras')
+          alert('bip bop bip comprame please')
         }
       }
 
-      
+
 
       break
     case '3':
@@ -86,6 +100,11 @@ if (
         valorFinal = metrosDeCuerda * precioPolietileno
       }
 
+      while (metrosDeCuerda > 1000) {
+        alert ("Tenemos solamente 1000 unidades en stock");
+        metrosDeCuerda = parseInt(prompt("Cuanto desea?"));
+      }
+
       if (
         confirm(
           `Usted esta por comprar ${metrosDeCuerda} metros de cuerda por $${valorFinal}. Confirma la transaccion?`
@@ -96,7 +115,7 @@ if (
         inputMetros.value = metrosDeCuerda;
         inputTotal.value = valorFinal;
       } else {
-        alert('ojala te mueras')
+        alert('bip bop bip comprame please')
       }
       break
   }
